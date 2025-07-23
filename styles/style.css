@@ -82,8 +82,8 @@ body{
 .Banner img{
     width: 100%;
 }
-/* title-siction */
-.title-siction{
+/* title-section */
+.title-section{
     max-width: 1140px;
     margin: 0 auto;
     margin-top: 120px;
@@ -107,6 +107,7 @@ body{
     color: rgba(0, 0, 0, 0.5);
     margin-top: 16px;
 }
+/* card-section */
 
 /* media screen phone */
 @media screen and (max-width:576px) {
@@ -123,7 +124,7 @@ body{
    #FLOWERS{
     display: block;
    }
-   .title-siction{
+   .title-section{
     margin-top: 65px;
    }
    .banner-title h2, 
