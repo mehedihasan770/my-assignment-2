@@ -46,6 +46,11 @@ body{
 #cart-add{
     font-weight: 500;
     color: #000000;
+    margin-left: 8px;
+}
+/* Banner section styles */
+.banner{
+    
 }
 
 /* media screen phone */
