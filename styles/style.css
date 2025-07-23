@@ -2,4 +2,58 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Inter", sans-serif
+}
+body{
+    background-color:rgb(245, 248, 255);
+}
+/* Navigation bar styles */
+.navbar{
+    max-width: 1140px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 0;
+}
+.navbar-title h1{
+    font-family: "Noto Serif", serif;
+    font-size: 25px;
+    color: #E95A08;
+    font-weight: 700;
+}
+.navbar-links ul{
+    display: flex;
+    gap: 48px;
+}
+.Home{
+    list-style: none;
+}
+.navbar-links ul li{
+    list-style: none;
+}
+.navbar-links ul li a{
+    text-decoration: none;
+    color: #252432;
+    font-weight: 700;
+    font-size: 16px;
+}
+.navbar-links ul li a span{
+    font-weight: 400;
+    font-size: 16px;
+    color: #8987A1;
+}
+#cart-add{
+    font-weight: 500;
+    color: #000000;
+}
+
+/* media screen phone */
+@media screen and (max-width:576px) {
+    .navbar{
+        padding: 22px 16px;
+    }
+   .Home{
+    display: none;
+   } 
 }
