@@ -203,7 +203,6 @@ body{
 /* Flower & Plants discount offer section styles */
 .discount-offer-section{
     max-width: 1140px;
-    height: 423px;
     margin: 0 auto;
     margin-top: 120px;
     display: flex;
@@ -255,6 +254,93 @@ body{
 .discount span{
     font-size: 28px;
 }
+/* Join-Section */
+.Join-Section{
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 120px;
+    background-image: url(../assets/news-letter-bg.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Join-Section-title{
+    max-width: 830px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+.Join-Section-title h2{
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: "Noto Serif", serif;
+}
+.Join-Section-input{
+    position: relative;
+    margin-top: 23px;
+}
+.Join-Section-input-email{
+    width: 800px;
+    height: 50px;
+    padding: 0 20px;
+    border: none;
+    outline: none;
+    color: rgba(0, 0, 0, 0.5);
+}
+.Join-Section-btn{
+    height: 50px;
+    padding: 0 50px;
+    background-color: #E95A08;
+    color: #FFFFFF;
+    border: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+/* footer section styles */
+.footer{
+    display: flex;
+    border: 1px solid;
+    justify-content: center;
+    align-items: center;
+}
+.Footer-Section{
+    display: flex;
+    max-width: 1120px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+.Website-logo p{
+    max-width: 359px;
+    font-size: 22px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 16px;
+}
+.Website-Footer-link ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+}
+.Website-Footer-link ul li a{
+    color: #6B7280;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+}
+.social-icon{
+    display: flex;
+    column-gap: 24px;
+}
+.twitter{
+    margin-top: 10px;
+}
 
 /* media screen phone */
 @media screen and (max-width:576px) {
@@ -292,7 +378,7 @@ body{
     }
     .card-section{
         margin-top: 28px;
-        margin: 13px 16px 0;
+        margin: 28px 16px 0;
     }
     .card, 
     .card-details button{
@@ -329,5 +415,37 @@ body{
     .discount-offer-section, 
     .discount-offer-img-1{
         row-gap: 20px;
+    }
+    .overly{
+        height: 99%;
+    }
+    .Join-Section{
+        width: 100%;
+        height: 275px;
+        margin-top: 40px;
+    }
+    .Join-Section-input{
+        width: 350px;
+        margin: 20px auto;
+    }
+    .Join-Section-input-email{
+        width: 350px;
+    }
+    .Join-Section-btn{
+        padding: 0 20px;
+    }
+    .Join-Section-title h2{
+        font-size: 20px;
+    }
+    .Footer-Section{
+        flex-direction: column;
+        margin: 50px 16px;
+    }
+    .Website-logo p{
+        font-size: 16px;
+    }
+    .social-icon, 
+    .Website-Footer-link ul{
+        margin-top: 32px;
     }
 }
