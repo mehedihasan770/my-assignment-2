@@ -17,6 +17,9 @@ body{
     align-items: center;
     padding: 22px 0;
 }
+.navbar-title img{
+    width: 100%;
+}
 .navbar-title h1{
     font-family: "Noto Serif", serif;
     font-size: 25px;
@@ -177,13 +180,6 @@ body{
 .Plants-Lover-title{
     max-width: 540px;
 }
-.Plants-Lover-title h2{
-    font-weight: 700;
-    font-size: 50px;
-    margin-bottom: 20px;
-    color: #000000;
-    font-family: "Noto Serif", serif;
-}
 .Plants-Lover-title h2 span{
     display: block;
     font-family: "Noto Serif", serif;
@@ -197,41 +193,99 @@ body{
     font-size: 22px;
     color: rgba(0, 0, 0, 0.5);
 }
-/* title section 2 */
+/* title section 2 styles */
 .title-section-2{
     max-width: 1140px;
     margin: 0 auto;
     margin-top: 133px;
     margin-top: 120px;
 }
+/* Flower & Plants discount offer section styles */
+.discount-offer-section{
+    max-width: 1140px;
+    height: 423px;
+    margin: 0 auto;
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+.discount-offer-img-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.discount-offer-img-1 img, 
+.discount-offer-img-2 img{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+.discount-offer-img-2{
+    position: relative;
+}
+.overly{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 19px;
+}
+.overly h2{
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-family: "Noto Serif", serif;
+}
+.overly span{
+    font-weight: 600;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+.discount h2{
+    font-size: 40px;
+}
+.discount span{
+    font-size: 28px;
+}
 
 /* media screen phone */
 @media screen and (max-width:576px) {
     .navbar{
-    margin: 22px 16px 0;
+        margin: 22px 16px 0;
+    }
+    .navbar-title img{
+        width: 63px;
     }
    .Home{
-    display: none;
+        display: none;
    }
    .Banner{
-    flex-direction: column-reverse;
-    margin-top: 28px;
+        flex-direction: column-reverse;
+        margin-top: 28px;
    }
    #FLOWERS{
-    display: block;
+        display: block;
    }
    .title-section{
-    margin-top: 65px;
+        margin-top: 65px;
    }
    .banner-title h2, 
    .title h2{
-    margin: 28px 16px 0;
-    font-size: 24px;
+        margin: 28px 16px 0;
+        font-size: 24px;
    }
    .banner-title p, 
    .title p{
-    margin: 13px 16px 0;
-    font-size: 14px;
+        margin: 13px 16px 0;
+        font-size: 14px;
     }
     .card-section{
         grid-template-columns: repeat(2,1fr);
@@ -254,11 +308,26 @@ body{
     .Plants-Lover-title h2{
         font-size: 24px;
         margin-top: 18px;
+        margin-bottom: 16px;
     }
     .Plants-Lover-title h2 span{
         display: inline;
     }
     .Plants-Lover-title ul{
         font-size: 14px;
+    }
+    .discount-offer-section{
+        flex-direction: column;
+        margin: 47px 16px 0;
+    }
+    .discount h2{
+        font-size: 20px;
+    }
+    .discount span{
+        font-size: 16px;
+    }
+    .discount-offer-section, 
+    .discount-offer-img-1{
+        row-gap: 20px;
     }
 }
