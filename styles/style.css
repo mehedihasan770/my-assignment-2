@@ -180,9 +180,13 @@ body{
 .Plants-Lover-title{
     max-width: 540px;
 }
+.Plants-Lover-title h2{
+    font-size: 50px;
+}
 .Plants-Lover-title h2 span{
     display: block;
     font-family: "Noto Serif", serif;
+    font-size: 50px;
 }
 .Plants-Lover-title ul{
     display: flex;
